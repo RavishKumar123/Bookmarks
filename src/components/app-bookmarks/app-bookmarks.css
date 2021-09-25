@@ -66,4 +66,8 @@ td {
   div.container {
     padding: 0px;
   }
+  .tableContainer {
+    border-collapse: collapse;
+    overflow: auto;
+  }
 }
