@@ -1,6 +1,6 @@
 import { Component, State, h } from '@stencil/core';
 import { store } from '@stencil/redux';
-import { addData } from '../../redux/actions/data';
+import { addData } from '../../redux/actions/bookmark';
 import { configureStore } from '../../redux/index';
 
 export interface Validation {
@@ -13,7 +13,7 @@ export interface Validation {
   styleUrl: 'app-form.css',
   shadow: false,
 })
-export class Form {
+export class AppForm {
   @State() name: string;
   @State() link: string;
   @State() tags: string;

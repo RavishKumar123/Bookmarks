@@ -1,12 +1,12 @@
 import { newSpecPage, SpecPage } from '@stencil/core/testing';
-import { Form } from './app-form';
+import { AppForm } from './app-form';
 
 describe('app-home', () => {
   let pageProperties: SpecPage;
 
   beforeEach(async () => {
     pageProperties = await newSpecPage({
-      components: [Form],
+      components: [AppForm],
       html: `<app-form></app-form>`,
     });
   });

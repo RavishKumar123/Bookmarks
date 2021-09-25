@@ -8,7 +8,7 @@ import {
   DeleteDataBeginAction,
   DeleteDataSuccessAction,
   DeleteDataFailureAction,
-} from './data';
+} from './bookmark';
 // Keep this type updated with each known action
 export type ActionTypes =
   | LoadDataBeginAction

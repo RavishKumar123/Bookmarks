@@ -1,12 +1,12 @@
 import { newSpecPage, SpecPage } from '@stencil/core/testing';
-import { Bookmarks } from './app-bookmarks';
+import { AppBookmarks } from './app-bookmarks';
 
 describe('app-bookmarks', () => {
   let pageProperties: SpecPage;
 
   beforeEach(async () => {
     pageProperties = await newSpecPage({
-      components: [Bookmarks],
+      components: [AppBookmarks],
       html: `<app-bookmarks></app-bookmarks>`,
     });
   });

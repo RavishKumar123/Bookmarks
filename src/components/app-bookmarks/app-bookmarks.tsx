@@ -1,6 +1,6 @@
 import { Component, State, h } from '@stencil/core';
 import { store } from '@stencil/redux';
-import { loadData, addData, deleteData } from '../../redux/actions/data';
+import { loadData, addData, deleteData } from '../../redux/actions/bookmark';
 import { configureStore } from '../../redux/index';
 
 @Component({
@@ -8,7 +8,7 @@ import { configureStore } from '../../redux/index';
   styleUrl: 'app-bookmarks.css',
   shadow: false,
 })
-export class Bookmarks {
+export class AppBookmarks {
   //Component Variables
   @State() bookmarks: any;
   @State() loading: boolean;

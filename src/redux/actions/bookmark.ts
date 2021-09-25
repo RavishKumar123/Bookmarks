@@ -26,7 +26,7 @@ export function loadData() {
 
 export function deleteData(id) {
   return async dispatch => {
-    // Trigger the LOAD_DATA_BEGIN action
+    // Trigger the DELETE_DATA_BEGIN action
     dispatch(deleteDataBegin());
     try {
       let response = await fetch(`https://614dc798e3cf1f001712d331.mockapi.io/bookmarks/${id}`, { method: 'DELETE' });
@@ -35,11 +35,11 @@ export function deleteData(id) {
       let json: DataResponse = await response.json();
       console.log('Response', json);
 
-      // Trigger the LOAD_DATA_SUCCESS action
+      // Trigger the DELETE_DATA_SUCCESS action
       dispatch(deleteDataSuccess(json));
       return json;
     } catch (error) {
-      // Trigger the LOAD_DATA_FAILURE action
+      // Trigger the DELETE_DATA_FAILURE action
       dispatch(deleteDataFailure(error));
     }
   };
